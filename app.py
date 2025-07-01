@@ -47,7 +47,7 @@ cpv_listado = cargar_cpvs()
 st.title("Buscador - Alertas BOE y DOUE (desde 08/05/2025)")
 st.write("Última actualización, todos los días a las 16:00")
 st.write(f"🔍 Total de registros disponibles: **{len(df)}**")
-st.write("Usa los filtros para realizar una búsqueda. Si no aplicas ninguno, no se cargará nada para evitar demoras.")
+st.write("Usa el campo CPVs para realizar una búsqueda. Si no aplicas ninguno, no se cargará nada para evitar demoras.")
 
 # Función para crear hipervínculo solo si es válido
 def linkify(value, text):
