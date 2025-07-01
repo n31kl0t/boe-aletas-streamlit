@@ -56,13 +56,6 @@ def linkify(value, text):
     else:
         return "(sin enlace)"
 
-# Mostrar todos los datos (opcional)
-if st.checkbox("Mostrar todos los datos combinados (⚠️ puede tardar)"):
-    df_display = df.copy()
-    df_display['URL'] = df_display['URL'].apply(lambda x: linkify(x, 'Abrir enlace'))
-    df_display['Ver documento'] = df_display['Ver documento'].apply(lambda x: linkify(x, 'Ver documento'))
-    st.write(df_display.to_markdown(index=False), unsafe_allow_html=True)
-
 # --- FILTROS UNIFICADOS ---
 
 # Campo de búsqueda por título
