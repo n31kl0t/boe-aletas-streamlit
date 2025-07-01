@@ -1,6 +1,16 @@
 import streamlit as st 
 import pandas as pd
 import io
+import gdown
+
+# ID del archivo
+file_id = "1YafhQs3SZwKJqoOLoOg_Y9Q7DR0nibEo"
+
+# URL directa de descarga
+url = f"https://drive.google.com/uc?id={file_id}"
+
+# Descargar la última versión del Excel en cada ejecución
+gdown.download(url, "Prueba Correos Extraer.xlsx", quiet=False, fuzzy=True)
 
 # Lista de hojas que queremos combinar
 hojas = [
